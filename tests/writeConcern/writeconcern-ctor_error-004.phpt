@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\WriteConcern construction (invalid wtimeout range)
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 --FILE--

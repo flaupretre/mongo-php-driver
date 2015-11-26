@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\WriteConcern debug output should include all fields for w default
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

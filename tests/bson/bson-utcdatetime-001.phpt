@@ -2,6 +2,8 @@
 BSON BSON\UTCDateTime #001
 --INI--
 date.timezone=America/Los_Angeles
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

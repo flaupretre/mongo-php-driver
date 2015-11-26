@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Cursor command result iteration through IteratorIterator
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

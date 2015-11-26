@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#020: Write failure when standlone is not available
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

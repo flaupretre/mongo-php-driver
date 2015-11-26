@@ -1,5 +1,7 @@
 --TEST--
 ConnectionTimeoutException: exceeding sockettimeoutms
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 <?php TESTCOMMANDS(STANDALONE) ?>

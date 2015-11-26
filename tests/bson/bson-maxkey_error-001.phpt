@@ -1,5 +1,7 @@
 --TEST--
 BSON BSON\MaxKey cannot be extended
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

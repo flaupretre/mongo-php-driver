@@ -1,5 +1,7 @@
 --TEST--
 PHPC-159: Memleak on failed path resolving
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

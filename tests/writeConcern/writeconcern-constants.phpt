@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\WriteConcern constants
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

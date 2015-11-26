@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager::executeBulkWrite() update write error
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

@@ -1,5 +1,7 @@
 --TEST--
 PHPC-341: fromJSON() leaks when JSON contains array or object fields
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

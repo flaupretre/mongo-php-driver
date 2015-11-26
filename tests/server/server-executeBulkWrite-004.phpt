@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Server::executeBulkWrite() with write concern (replica set secondary)
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 <?php NEEDS("REPLICASET"); CLEANUP(REPLICASET); ?>

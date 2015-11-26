@@ -1,5 +1,7 @@
 --TEST--
 PHPC-334: Encoded BSON should never have multiple __pclass keys
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

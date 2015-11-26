@@ -2,6 +2,8 @@
 BSON BSON\UTCDateTime::toDateTime()
 --INI--
 date.timezone=America/Los_Angeles
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 --FILE--

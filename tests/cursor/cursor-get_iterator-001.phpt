@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Cursor get_iterator handler does not yield multiple iterators (foreach)
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

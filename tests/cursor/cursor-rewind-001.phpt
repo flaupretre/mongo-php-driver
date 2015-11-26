@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Cursor cannot rewind after starting iteration
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

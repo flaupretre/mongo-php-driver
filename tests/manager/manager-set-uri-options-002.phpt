@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager: Logging into MongoDB using credentials from $options
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("STANDALONE_SSL"); ?>
 --FILE--

@@ -1,5 +1,7 @@
 --TEST--
 Test for PHPC-347: Memory leak decoding empty buffer
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

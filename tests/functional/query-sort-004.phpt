@@ -1,5 +1,7 @@
 --TEST--
 Sort query option is always serialized as a BSON document
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 <?php CLEANUP(STANDALONE); ?>

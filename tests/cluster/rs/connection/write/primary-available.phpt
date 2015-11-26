@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#011: Successful write to an available primary
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

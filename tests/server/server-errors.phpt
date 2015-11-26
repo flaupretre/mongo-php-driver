@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Server::executeQuery() with sort and empty filter
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

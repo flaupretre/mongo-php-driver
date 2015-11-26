@@ -1,5 +1,7 @@
 --TEST--
 BSON BSON\UTCDateTime debug handler (32-bit)
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php if (4 !== PHP_INT_SIZE) { die('skip Only for 32-bit platform'); } ?>
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>

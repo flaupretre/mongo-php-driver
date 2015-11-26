@@ -1,5 +1,7 @@
 --TEST--
 Connect to MongoDB with using SSL without verifying anything
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("STANDALONE_SSL"); ?>
 --FILE--

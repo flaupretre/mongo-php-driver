@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#013: A stepped-down primary triggers a refresh
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

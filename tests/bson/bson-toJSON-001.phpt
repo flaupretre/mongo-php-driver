@@ -1,5 +1,7 @@
 --TEST--
 BSON\toJSON(): Encoding JSON
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

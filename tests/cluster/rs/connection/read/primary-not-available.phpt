@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#007: Read failure when primary is not available
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

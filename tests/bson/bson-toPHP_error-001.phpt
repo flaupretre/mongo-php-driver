@@ -1,5 +1,7 @@
 --TEST--
 BSON\toPHP(): Type map class must be both instantiatable and Unserializable
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

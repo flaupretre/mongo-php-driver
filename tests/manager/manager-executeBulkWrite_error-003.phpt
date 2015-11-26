@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager::executeBulkWrite() write concern error
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 <?php NEEDS("REPLICASET"); CLEANUP(REPLICASET); ?>

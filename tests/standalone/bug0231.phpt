@@ -1,5 +1,7 @@
 --TEST--
 Multiple managers sharing streams: Using stream after closing manager
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE)?>
 --FILE--

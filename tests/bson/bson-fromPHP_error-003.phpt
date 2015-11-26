@@ -2,6 +2,8 @@
 BSON\fromPHP(): Encoding non-Serializable Type objects as a root element
 --INI--
 date.timezone=America/Los_Angeles
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager::__construct(): invalid URI
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

@@ -1,5 +1,7 @@
 --TEST--
 PHPC-430: Query constructor arguments are modified
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

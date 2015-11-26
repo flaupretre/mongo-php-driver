@@ -1,5 +1,7 @@
 --TEST--
 WriteConcernError: Populate WriteConcernError on WriteConcern errors
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("REPLICASET"); ?>
 --FILE--

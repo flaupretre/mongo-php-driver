@@ -1,5 +1,7 @@
 --TEST--
 _id should only be generated for top-level document, not embedded docs
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager::selectServer() select a server from SDAM based on ReadPreference
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("REPLICASET"); ?>
 <?php CLEANUP(REPLICASET); CLEANUP(REPLICASET, "local", "example"); ?>

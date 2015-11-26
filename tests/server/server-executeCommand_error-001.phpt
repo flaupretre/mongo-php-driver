@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Server::executeCommand() with conflicting read preference for secondary
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("REPLICASET"); ?>
 --FILE--

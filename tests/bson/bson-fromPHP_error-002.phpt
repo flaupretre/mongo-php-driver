@@ -1,5 +1,7 @@
 --TEST--o
 BSON\fromPHP(): Encoding unknown Type objects as a document field value
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

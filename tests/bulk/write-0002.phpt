@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\BulkWrite: #002 Get the generated ID
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

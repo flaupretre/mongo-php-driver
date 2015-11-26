@@ -1,5 +1,7 @@
 --TEST--
 BSON\toPHP(): Tests from serialization specification
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

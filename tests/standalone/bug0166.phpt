@@ -1,5 +1,7 @@
 --TEST--
 Disable serialization of objects
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE)?>
 --FILE--

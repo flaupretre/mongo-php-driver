@@ -1,4 +1,4 @@
-.PHONY: coverage testclean ChangeLog RELEASE package package.xml docs
+.PHONY: coverage testclean ChangeLog RELEASE package package.xml docs phpc
 
 DATE=`date +%Y-%m-%d--%H-%M-%S`
 MONGODB_VERSION=$(shell php -n -dextension=modules/mongodb.so -r 'echo MONGODB_VERSION;')
@@ -7,6 +7,10 @@ MONGODB_STABILITY=$(shell php -n -dextension=modules/mongodb.so -r 'echo MONGODB
 LIB_PATH=vendor/mongodb/mongodb
 COMPOSER_ARGS=update --no-interaction --prefer-source
 PHPUNIT_ARGS=--process-isolation
+PHPC_EMBED = pcs://internal/tools/embed.php
+PHPC_CMD = $(PHP_EXECUTABLE) -d "extension=pcs.$(SHLIB_DL_SUFFIX_NAME)" -r "require '$(PHPC_EMBED)';" --
+#-- Where we can find the Mongo PHP library
+MONGODB_LIB = $(srcdir)/../lib
 
 help:
 	@echo -e "\t$$ make vm"
@@ -39,6 +43,8 @@ help:
 	@echo -e "\t$$ make test-virtual"
 	@echo -e "\t       - Provisions some VMs, installs the pecl archive and executes the tests"
 
+phpc:
+	$(PHPC_CMD) $(MONGODB_LIB)/src lib mongo-php-library.phpc
 
 mv-coverage:
 	@if test -e $(top_srcdir)/coverage; then \

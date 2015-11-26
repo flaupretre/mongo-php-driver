@@ -1,5 +1,7 @@
 --TEST--
 Test for PHPC-325: Memory leak decoding buffers with multiple documents
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

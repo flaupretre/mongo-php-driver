@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Cursor destruct should kill a live cursor
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

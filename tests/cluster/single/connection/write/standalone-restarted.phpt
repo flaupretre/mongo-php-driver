@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#019: Successful write to a restarted standalone
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

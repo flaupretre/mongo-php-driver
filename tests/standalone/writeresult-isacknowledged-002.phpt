@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\WriteResult::isAcknowledged() with inherited WriteConcern
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

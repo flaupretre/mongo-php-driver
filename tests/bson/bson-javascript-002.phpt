@@ -1,5 +1,7 @@
 --TEST--
 BSON BSON\Javascript debug handler
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

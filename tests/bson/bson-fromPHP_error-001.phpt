@@ -1,5 +1,7 @@
 --TEST--
 BSON\fromPHP(): bsonSerialize() must return an array or stdClass
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

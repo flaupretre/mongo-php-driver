@@ -1,5 +1,7 @@
 --TEST--
 BSON\toPHP(): __pclass must be both instantiatable and Persistable
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

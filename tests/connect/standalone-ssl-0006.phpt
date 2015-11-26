@@ -1,5 +1,7 @@
 --TEST--
 Connect to MongoDB with using SSL and default options
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php if (defined("HHVM_VERSION_ID")) exit("skip HHVM does not support interception of SSL connection creation"); ?>
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("STANDALONE_SSL"); ?>

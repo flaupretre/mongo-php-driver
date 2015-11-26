@@ -1,5 +1,7 @@
 --TEST--
 BSON encoding: Encoding objects into BSON representation
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

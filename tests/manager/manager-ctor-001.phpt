@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Manager::__construct()
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

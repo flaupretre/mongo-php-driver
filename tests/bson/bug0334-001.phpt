@@ -1,5 +1,7 @@
 --TEST--
 PHPC-334: Injected __pclass should override a __pclass key in bsonSerialize() return value
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

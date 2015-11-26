@@ -1,5 +1,7 @@
 --TEST--
 PHPC-243: Manager::executeUpdate() & Bulk->update() w/o multi
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; CLEANUP(STANDALONE) ?>
 --FILE--

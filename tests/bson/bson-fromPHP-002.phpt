@@ -2,6 +2,8 @@
 BSON\fromPHP(): Encoding non-Persistable objects as a document
 --INI--
 date.timezone=America/Los_Angeles
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

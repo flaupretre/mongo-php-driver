@@ -1,5 +1,7 @@
 --TEST--
 Cluster Integration Test#025: Read failure when neither mongos' are available
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require strstr(__DIR__, "tests/", true) . "tests/utils/basic-skipif.inc"; SLOW(); ?>
 --FILE--

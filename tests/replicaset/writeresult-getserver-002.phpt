@@ -1,5 +1,7 @@
 --TEST--
 MongoDB\Driver\Server: Manager->getServer() returning correct server
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; NEEDS("REPLICASET"); ?>
 <?php CLEANUP(REPLICASET); CLEANUP(REPLICASET, "local", "example"); ?>

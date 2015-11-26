@@ -1,5 +1,7 @@
 --TEST--
 BSON Serializing a PHP resource should throw exception
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>
 --FILE--

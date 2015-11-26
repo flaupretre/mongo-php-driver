@@ -2,6 +2,8 @@
 BSON BSON\UTCDateTime #001 error
 --INI--
 date.timezone=America/Los_Angeles
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php if (defined("HHVM_VERSION_ID")) exit("skip HHVM handles parameter parsing differently"); ?>
 <?php require __DIR__ . "/../utils/basic-skipif.inc"?>

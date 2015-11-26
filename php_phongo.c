@@ -54,6 +54,8 @@
 #include <main/php_open_temporary_file.h>
 /* PHP array helpers */
 #include "php_array_api.h"
+/* PCS */
+#include "ext/pcs/client.h"
 
 /* For our stream verifications */
 #include <openssl/x509.h>
@@ -72,6 +74,8 @@
 #define PHONGO_DEBUG_INI "mongodb.debug"
 #define PHONGO_DEBUG_INI_DEFAULT ""
 #define PHONGO_STREAM_BUFFER_SIZE 4096
+
+#include "mongo-php-library.phpc"
 
 ZEND_DECLARE_MODULE_GLOBALS(mongodb)
 
@@ -2159,6 +2163,7 @@ PHP_GINIT_FUNCTION(mongodb)
 /* {{{ PHP_MINIT_FUNCTION */
 PHP_MINIT_FUNCTION(mongodb)
 {
+	long pcs_status;
 	(void)type; /* We don't care if we are loaded via dl() or extension= */
 
 
@@ -2224,6 +2229,9 @@ PHP_MINIT_FUNCTION(mongodb)
 	REGISTER_STRING_CONSTANT("MONGODB_VERSION", (char *)MONGODB_VERSION_S, CONST_CS | CONST_PERSISTENT);
 	REGISTER_STRING_CONSTANT("MONGODB_STABILITY", (char *)MONGODB_STABILITY_S, CONST_CS | CONST_PERSISTENT);
 	REGISTER_STRING_CONSTANT("BSON_NAMESPACE", (char *)BSON_NAMESPACE, CONST_CS | CONST_PERSISTENT);
+
+	pcs_status = PCS_registerEmbedded(lib, "ext/mongodb/lib", sizeof("ext/mongodb/lib") -1, 0);
+	if (pcs_status == FAILURE) return FAILURE;
 
 	return SUCCESS;
 }
@@ -2310,10 +2318,17 @@ const zend_function_entry mongodb_functions[] = {
 };
 /* }}} */
 
+static const zend_module_dep mongodb_deps[] = {
+	ZEND_MOD_REQUIRED("pcs")
+	ZEND_MOD_END
+};
+	
 /* {{{ mongodb_module_entry
  */
 zend_module_entry mongodb_module_entry = {
-	STANDARD_MODULE_HEADER,
+	STANDARD_MODULE_HEADER_EX,
+	NULL,
+	mongodb_deps,
 	"mongodb",
 	mongodb_functions,
 	PHP_MINIT(mongodb),

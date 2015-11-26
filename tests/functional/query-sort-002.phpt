@@ -1,5 +1,7 @@
 --TEST--
 Sorting single field, descending
+--EXTENSIONS--
+pcs
 --SKIPIF--
 <?php require __DIR__ . "/../utils/basic-skipif.inc"; ?>
 <?php CLEANUP(STANDALONE); LOAD(STANDALONE); ?>
